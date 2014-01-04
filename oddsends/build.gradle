@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.10'
+}
+
+dependencies {
+	testCompile 'junit:junit:4.11'
+	testCompile 'com.github.tomakehurst:wiremock:1.40'
+	
+	compile 'org.codehaus.groovy:groovy-all:2.2.0'
+	compile ('org.codehaus.groovy.modules.http-builder:http-builder:0.6') {
+		exclude group: 'org.codehaus.groovy'
+	}
+}
