@@ -1,4 +1,4 @@
-package oddsends;
+package com.crg.oe;
 
 import static org.junit.Assert.*
 import static org.hamcrest.CoreMatchers.*
