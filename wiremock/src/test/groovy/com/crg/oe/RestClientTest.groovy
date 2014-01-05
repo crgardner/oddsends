@@ -1,4 +1,4 @@
-package com.crg.oe;
+package com.crg.oe
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig
